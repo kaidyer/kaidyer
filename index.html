@@ -1,77 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Kai Dyer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kai Dyer is a software engineer building thoughtful web, app, and systems experiences."
+    />
+    <title>Kai Dyer | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site_header">
-        <nav>
-          <ul role="list" class="flex flex_center">
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work Experience</a></li>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="site-mark" href="#top">KD</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
-    <section id="intro" class="intro">
-        <h1>Hey, welcome!</h1>
-        <h1>My name is Kai Dyer.</h1>  
-    </section>
-    
-    <section id="about" class="section-body">
-      <h4>I'm a software engineer with a passion for app and web development.</h4>
-      <h4>This is my website where I host my work and project experiences.</h4>
-      <h5>This page is very much still in progress!</h3>
-    </section>
 
-    <section id="work" class="section-body">
-      <div class="resume-item">
-        <div class="resume-header">
-          <h4 class="job-title">Software Engineer</h4>
-          <span class="job-dates">June 2023 - Present</span>
-        </div>
-        <h5 class="job-company">The MITRE Corporation</h5>
-        <ul class="job-responsibilities">
-          <li>Designed and developed a Java-based toolset for automatic validation and analysis of systems-of-systems models,
-            enabling rapid conformance checks to style guides and significantly reducing manual review time.</li>
-          <li>Contributed to a physics-based simulation in AFSIM to evaluate performance of complex government systems
-            under realistic conditions.</li>
-          <li>Demonstrated internal toolsets to government sponsors, emphasizing their impact and relevance to stakeholder
-            needs.</li>
-          <li>Regularly engaged with government and industry stakeholders to identify evolving needs and align software
-            development efforts with mission goals.</li>
-        </ul>
-      </div>
-    </section>
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <!-- <p class="eyebrow">Software engineer crafting clear, human-centered systems.</p> -->
+            <h1>
+              Kai Dyer is a software engineer <span>building tools</span> for modeling, simulation, and analysis.
+            </h1>
+            <!-- <p class="hero-text">
+              I work across web, mobile, and simulation-driven software, with a soft spot for
+              interfaces that feel simple even when the underlying systems are not.
+            </p> -->
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">See selected work</a>
+              <a class="button button-secondary" href="https://github.com/kaidyer" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
 
-    <section id="projects" class="section-body">
-      <div class="resume-item">
-        <div class="resume-header">
-          <h4 class="job-title"><a href="https://github.com/kaidyer/MDRDarts">D.A.R.T.S</a></h4>
-          <span class="job-dates">Sept 2022 - May 2023</span>
-        </div>
-        <ul class="job-responsibilities">
-          <li>Collaborated in a 5-person team during a year-long design project.</li>
-          <li>Designed and implemented a system for automatic detection of thrown dart scores with high precision.</li>
-          <li>Developed an intuitive iPhone app using SwiftUI.</li>
-          <li>Demonstrated 96% accuracy in detecting score with 2mm precision.</li>
-        </ul>
-      </div>
+          <aside class="hero-panel" aria-label="Highlights">
+            <p class="panel-label">Currently</p>
+            <p class="panel-title">Software Engineer at The MITRE Corporation</p>
+            <p class="panel-text">
+              Building tools for model validation, systems analysis, and technical communication in
+              complex engineering environments.
+            </p>
+            <div class="fact-grid">
+              <div>
+                <span class="fact-value">Python</span>
+                <span class="fact-label">tooling + validation</span>
+              </div>
+              <div>
+                <span class="fact-value">SwiftUI</span>
+                <span class="fact-label">mobile prototyping</span>
+              </div>
+              <div>
+                <span class="fact-value">Modeling</span>
+                <span class="fact-label">simulation workflows</span>
+              </div>
+              <div>
+                <span class="fact-value">ML</span>
+                <span class="fact-label">adaptive systems</span>
+              </div>
+            </div>
+          </aside>
+        </section>
 
-      <div class="resume-item">
-        <div class="resume-header">
-          <h4 class="job-title">Machine Learning For a 6G Network</h4>
-          <span class="job-dates">Sept 2022 - May 2023</span>
+        <section class="section section-grid" id="about">
+          <div class="section-intro">
+            <p class="section-tag">About</p>
+            <h2>Thoughtful software, built for real people and real constraints.</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              My work sits at the intersection of product thinking and technical depth. I enjoy
+              taking dense problems, finding the signal, and turning them into tools that teams can
+              actually trust and use.
+            </p>
+            <p>
+              That has led me from app development to machine learning experiments to systems
+              modeling, always with the same goal: build something dependable, understandable, and
+              genuinely useful.
+            </p>
+            <div class="pill-row" aria-label="Interests">
+              <span>Web development</span>
+              <span>iOS apps</span>
+              <span>Simulation</span>
+              <span>Systems engineering</span>
+              <span>Machine learning</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="section-heading">
+            <p class="section-tag">Experience</p>
+            <h2>Shipping analytical software for complex engineering teams.</h2>
+          </div>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <p class="experience-role">Software Engineer</p>
+                <p class="experience-company">The MITRE Corporation</p>
+              </div>
+              <p class="experience-date">June 2023 - Present</p>
+            </div>
+
+            <div class="experience-body">
+              <p>
+                I design and build engineering tools that help teams validate models, analyze
+                complex systems, and communicate technical results clearly.
+              </p>
+              <ul class="detail-list">
+                <li>
+                  Developed a Java-based toolset for automated validation and analysis of
+                  systems-of-systems models, reducing manual review effort and improving
+                  conformance checks.
+                </li>
+                <li>
+                  Contributed to a proprietary physics-based simulation environment used to evaluate
+                  complex system performance in realistic scenarios.
+                </li>
+                <li>
+                  Presented technical tools and collaborated closely with stakeholders to align
+                  engineering work with evolving needs.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <p class="section-tag">Projects</p>
+            <h2>A few things I have enjoyed building.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <p class="project-kicker">Current project</p>
+              <div class="project-header">
+                <h3>Network Graph Dashboard</h3>
+                <p>In progress</p>
+              </div>
+              <p class="project-summary">
+                A dashboard for exploring network graph visuals alongside the metrics that help make
+                those relationships easier to interpret.
+              </p>
+              <ul class="detail-list">
+                <li>Building views that pair graph structure with supporting quantitative context.</li>
+                <li>Focusing on making dense network data easier to inspect and reason about.</li>
+                <li>Designing the interface around exploration instead of static reporting.</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <p class="project-kicker">Team design project</p>
+              <div class="project-header">
+                <h3>D.A.R.T.S.</h3>
+                <p>Sept 2022 - May 2023</p>
+              </div>
+              <p class="project-summary">
+                An automated dart scoring system designed to identify thrown dart scores with high
+                precision, paired with an intuitive iPhone app.
+              </p>
+              <ul class="detail-list">
+                <li>Built in a five-person team over a year-long design cycle.</li>
+                <li>Implemented the scoring system and supporting SwiftUI mobile experience.</li>
+                <li>Reached 96% scoring accuracy with 2 mm precision.</li>
+              </ul>
+              <a href="https://github.com/kaidyer/MDRDarts" target="_blank" rel="noreferrer">
+                View project on GitHub
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Interested in collaborating or just saying hi?</h2>
         </div>
-        <ul class="job-responsibilities">
-          <li>Deployed a reinforcement learning algorithm within a simulated computer network environment to evaluate
-            adaptive performance.</li>
-          <li>Designed and implemented five distinct network configurations, each tailored to different use cases and performance
-            scenarios.</li>
-        </ul>
-      </div>
-    </section>
+        <div class="footer-actions">
+          <a class="button button-primary" href="https://github.com/kaidyer" target="_blank" rel="noreferrer">
+            Reach out on GitHub
+          </a>
+          <a class="footer-link" href="#top">Back to top</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
